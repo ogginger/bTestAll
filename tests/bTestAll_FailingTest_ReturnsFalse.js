@@ -2,21 +2,23 @@
 
 define([
 	"bTestAll",
-	"Test"
+	"xGenerateTest"
 ], function(
 	bTestAll,
-	Test
+	xGenerateTest
 ) {
 	return {
 		"Name":"bTestAll_FailingTest_ReturnsFalse",
-		"Input": [ Test({
-			"Name": "FailingTest",
-			"Input": undefined,
-			"Function": function( Input ) {
-				return false;
-			},
-			"ExpectedOutput": true
-		}) ],
+		"Input": [
+			xGenerateTest({
+				"Name": "FailingTest",
+				"Input": undefined,
+				"Function": function() {
+					return false;
+				},
+				"ExpectedOutput": true
+			})
+		],
 		"Function": bTestAll,
 		"ExpectedOutput": false
 	};

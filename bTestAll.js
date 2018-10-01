@@ -6,8 +6,12 @@ define([
 	_
 ) {
   return function( Input ) {
-	return _.every( Input, function( Test ) {
-		return Test.Run();
-	});
+	var Result = false;
+	if ( Input !== undefined ) {
+		Result = _.every( Input, function( Test ) {
+			return Test.Run();
+		});
+	}
+	return Result;
   };
 });
