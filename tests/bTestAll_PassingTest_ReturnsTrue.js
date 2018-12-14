@@ -9,15 +9,18 @@ define([
 ) {
 	return {
 		"Name":"bTestAll_PassingTest_ReturnsTrue",
-		"Input": [ 
+		"Input": { "TestCollection": [
 			Test({
-				"Name": "Passing",
+				"Name": "PassingTest",
 				"Input": undefined,
-				"Function": function() { return true; },
+				"Function": function() {
+					return true;
+				},
 				"ExpectedOutput": true
-			}) 
-		],
+			})
+		]},
 		"Function": bTestAll,
-		"ExpectedOutput": true
+		"ExpectedOutput": true,
+		"Debug": true
 	};
 });

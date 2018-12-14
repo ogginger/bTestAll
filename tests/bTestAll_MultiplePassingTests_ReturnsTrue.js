@@ -2,15 +2,15 @@
 
 define([
 	"bTestAll",
-	"Test"
+	"xGenerateTest"
 ], function(
 	bTestAll,
-	Test
+	xGenerateTest
 ) {
 	return {
 		"Name":"bTestAll_MultiplePassingTests_ReturnsTrue",
-		"Input": [
-			Test({
+		"Input": { "TestCollection": [
+			xGenerateTest({
 				"Name":"FirstPassing",
 				"Input": undefined,
 				"Function": function( Input ) {
@@ -18,7 +18,7 @@ define([
 				},
 				"ExpectedOutput": true
 			}),
-			Test({
+			xGenerateTest({
 				"Name": "SecondPassing",
 				"Input": undefined,
 				"Function": function( Input ) {
@@ -26,7 +26,7 @@ define([
 				},
 				"ExpectedOutput": true
 			})
-		],
+		]},
 		"Function": bTestAll,
 		"ExpectedOutput": true
 	};

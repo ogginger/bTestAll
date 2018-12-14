@@ -9,7 +9,7 @@ define([
 ) {
 	return {
 		"Name":"bTestAll_OneTestFails_ReturnsFalse",
-		"Input": [
+		"Input": { "TestCollection": [
 			Test({
 				"Name": "PassingTest",
 				"Input": undefined,
@@ -26,7 +26,7 @@ define([
 				},
 				"ExpectedOutput": true
 			})
-		],
+		]},
 		"Function": bTestAll,
 		"ExpectedOutput": false
 	};

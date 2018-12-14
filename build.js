@@ -4,9 +4,11 @@
 */ 
 ({
     paths: {
-	"underscore": "lib/underscore.min"
+	"underscore": "lib/underscore.min",
+	"log":"lib/log.min",
+	"validate": "lib/validate.min"
     },
-    exclude: [ "underscore" ],
+    exclude: [ "underscore", "log", "validate" ],
     name: "bTestAll",
     out: "test_all.min.js"
 })

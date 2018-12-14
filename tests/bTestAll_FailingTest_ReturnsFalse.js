@@ -9,7 +9,7 @@ define([
 ) {
 	return {
 		"Name":"bTestAll_FailingTest_ReturnsFalse",
-		"Input": [
+		"Input": { "TestCollection": [
 			xGenerateTest({
 				"Name": "FailingTest",
 				"Input": undefined,
@@ -18,7 +18,7 @@ define([
 				},
 				"ExpectedOutput": true
 			})
-		],
+		]},
 		"Function": bTestAll,
 		"ExpectedOutput": false
 	};
