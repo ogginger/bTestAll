@@ -27,13 +27,14 @@ define([
       var xTestSuite = this;
       xTestSuite.set( "MethodUnderTest", "bTestAll" );	
 	
-//	xTestSuite.add( bTestAll_PassingTest_ReturnsTrue );
-//	xTestSuite.add( bTestAll_MultiplePassingTests_ReturnsTrue );
-//	xTestSuite.add( bTestAll_FailingTest_ReturnsFalse );
-//	xTestSuite.add( bTestAll_OneTestFails_ReturnsFalse );
-//	xTestSuite.add( bTestAll_NoArguments_ThrowsErrorNoArguments );
-//	xTestSuite.add( bTestAll_TestThrowsError_ReturnsFalse );
-//	xTestSuite.test();
+	xTestSuite.add( bTestAll_PassingTest_ReturnsTrue );
+	xTestSuite.add( bTestAll_MultiplePassingTests_ReturnsTrue );
+	xTestSuite.add( bTestAll_FailingTest_ReturnsFalse );
+	xTestSuite.add( bTestAll_OneTestFails_ReturnsFalse );
+	xTestSuite.add( bTestAll_NoArguments_ThrowsErrorNoArguments );
+	xTestSuite.add( bTestAll_TestThrowsError_ReturnsFalse );
+
+	xTestSuite.test();
 
     }
   });

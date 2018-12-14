@@ -21,6 +21,6 @@ define([
 		]},
 		"Function": bTestAll,
 		"ExpectedOutput": true,
-		"Debug": true
+		"Debug": false
 	};
 });
